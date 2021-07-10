@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Pomodoro Timer App</title>
+    <link rel="stylesheet" href="styles.css">
+	<audio>
+	      <source src="http://www.myinstants.com/media/sounds/alert-hq.mp3"></source>
+    </audio>
+  </head>
+  <body>
+    <h1>Ridam's</h1>
+    <h3>Pomodoro Timer</h3>
+    <div class='timers'>
+      <div class='break'>
+        <p>Break Length</p>
+        <div>
+          <button class='in' id='minusBreak'>-</button>
+          <p class='in' id='break'>5</p>
+          <button class='in' id='plusBreak'>+</button>
+        </div>
+      </div>
+      <div class='session'>
+        <p>Session Length</p>
+        <div>
+          <button class='in' id='minusCount'>-</button>
+          <p class='in' id='count'> 25 </p>
+          <button class='in' id='plusCount'>+</button>
+        </div>
+      </div>
+    </div>
+    <div class='clock' id='grad'>
+      <p class='title'>Session</p>
+      <p class='timer'>25</p>
+    </div>
+	<h3>How to use?</h3>
+    <p>To start the countdown click the clock!</p>
+    <p>Pause and unpause by tapping the clock!</p>
+    <p>To reset the clock, adjust the clock to your new times when the clock is paused and then click the clock!</p>
+  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="app.js"></script>	
+  </body>
+</html>
